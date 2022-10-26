@@ -1,0 +1,23 @@
+.button {
+    background-color: $mc;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.14em;
+    color: #FCFDFE;
+    padding: 14px 30px;
+    transition: .4s all;
+    &:hover {
+        background-color: $mc-h;
+        color: #FCFDFE;
+    }
+    &-blue {
+        background-color: $sc;
+        &:hover {
+            background-color: $sc-h;
+            color: #FCFDFE;
+        }
+    }
+}

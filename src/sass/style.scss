@@ -1,0 +1,80 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/button';
+@import 'blocks/block';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/features';
+@import 'blocks/expert';
+@import 'blocks/health';
+@import 'blocks/footer';
+
+
+* {
+    font-family: Rubik;
+    color: $dc;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: Rubik;
+    color: $dc;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+[class*=__container] {
+    max-width: 1087px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.promo {
+    &__container {
+        padding: 153px 15px 48px 15px;
+    }
+}
+
+@media (max-width: 1087px) {
+    [class*=__container] {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    [class*=__container] {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class*=__container] {
+        max-width: none;
+    }
+    .promo {
+        &__container {
+            padding: 100px 15px 30px 15px;
+        }
+    }
+}
+

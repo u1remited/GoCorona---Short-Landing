@@ -1,0 +1,54 @@
+.block {
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 126%;
+        color: $dc;
+        span {
+            color: $mc;
+        }
+        &:not(:last-child) {
+            margin: 0 0 8px 0;
+        }
+        &_blue {
+            span {
+                color: $sc;
+            }
+        }
+        &_tc {
+            text-align: center;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 138.5%;
+        letter-spacing: 0.08em;
+        color: #616161;
+        &:not(:last-child) {
+            margin: 0 0 26px 0;
+        }
+        &_mw {
+            text-align: center;
+            margin: 14px auto 0 auto;
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .block {
+        &__title {
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 479.98px) {
+    .block {
+        &__button {
+            display: block;
+            text-align: center;
+        }
+    }
+}
